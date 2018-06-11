@@ -30,11 +30,38 @@ public class Main {
 		}
 
 		int x=0;
-		do {                            // перший раз виконается не залежно від умов вказаних у циклі while
+        do {                            // do while перший раз виконается не залежно від умов вказаних у циклі while
 			x++;
 			System.out.println(x);
 
 		}while (x < 0);
 
-	}
+        isTrue = true;
+
+
+        while (isTrue) {                  // будє виконуватись до тих пір поки змінна не стане false
+            System.out.println(j);
+            j += 10;
+            if (j >= 100)
+                break;                  //використання брейк для завершення циклу
+        }
+
+
+        int z = 0;
+        while (z < 10) {
+            z += 1;
+            if (z % 2 == 0)
+                continue;               // будє пропускать ітерації якщо остаток від ділення дорівнює нулю
+            System.out.println("z:" + z);
+
+
+        }
+
+        while (isTrue) {                  // будє виконуватись до тих пір поки змінна не стане false
+            System.out.println(j);
+            j += 10;
+            if (j >= 100)
+                return;                  //використання return для завершення циклу
+        }
+    }
 }
